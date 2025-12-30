@@ -1,0 +1,20 @@
+{
+  "name": "PostgreSQL on Ubuntu 22",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "db",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "root",
+  "postCreateCommand": "echo 'DevContainer ready'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg"
+      ]
+    }
+  },
+  "forwardPorts": [
+    5432
+  ]
+}
